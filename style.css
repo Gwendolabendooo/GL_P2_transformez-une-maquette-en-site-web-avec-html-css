@@ -1,0 +1,298 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+h2{
+    margin-top: 0;
+}
+header > h3{
+    margin-left: 0;
+}
+input{
+    padding: 10px;
+    border: solid 1px rgb(228, 228, 228);
+}
+button{
+    padding: 10px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -ms-border-radius: 0px 10px 10px 0px;
+    -o-border-radius: 0px 10px 10px 0px;
+}
+.search{
+    margin: 0;
+    display: flex;
+}
+.search > div{
+    background-color: #F2F2F2;
+    width: 25px;
+    margin: initial;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+}
+p{
+    margin: 0;
+}
+h3{
+    margin: 16px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav > img{
+    height: 50px;
+    padding: 10px;
+}
+nav > ul{
+    display: flex;
+}
+nav > ul > li{
+    padding: 20px;
+    border-top: solid 2px white;
+}
+nav > ul > li > a{
+    color: black;
+}
+nav > ul > li:hover{
+    border-top: solid 2px #0065FC;
+}
+nav > ul > li:hover a{
+    color: #0065FC;
+}
+.list-hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 600px;
+}
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+}
+.hebergement{
+    width: 30%;
+    height: 250px;
+    box-shadow: 0px 0px 6px #555;
+    border: solid white 5px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+.hebergement > div > h4{
+    margin: 0px;
+}
+.hebergement > div{
+    display: flex;
+    flex-direction: column;
+}
+.hebergement > div > h4, p, div{
+    margin: 5px;
+}
+.fa-star{
+    color: #c8c8c8;
+}
+.colored{
+    color: #0065FC;
+}
+.hebergement > img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.ctn-list{
+    display: flex;
+    justify-content: space-between;
+}
+.list-populaire{
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    padding: 20px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.list-filtre{
+    display: flex;
+    font-size: 18px;
+    font-weight:600;
+}
+.list-filtre > div{
+    margin: 20px;
+}
+.ctn-filtre{
+    padding: 5px 5px 5px 40px;
+}
+.list-filtre > div:first-child{
+    align-self: center;
+    margin-left: 0;
+}
+.ctn-info{
+    padding: 5px;
+    width: fit-content;
+    border: solid rgb(207, 207, 207) 1px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-align: center;
+}
+.rubrique-hover{
+    border-top: solid 2px #0065FC;
+}
+.rubrique-hover > a{
+    color: #0065FC;
+}
+.sec-activites{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.activites{
+    background-color: white;
+    box-shadow: 0px 0px 6px #555;
+    border: solid 4px white;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.ctn-act{
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.act-1{
+    height: 95%;
+}
+.act-4{
+    height: 40%;
+}
+.act-2{
+    height: 50%;
+}
+.act-3{
+    height: 40%;
+}
+.img-act{
+    height: 90%;
+    object-fit: cover;
+    width: 100%;
+}
+.info{
+    display: flex;
+    margin-bottom: 40px;
+}
+.list-populaire > div{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+.desc-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.populaire{
+    display: flex;
+    height: 180px;
+    box-shadow: 0px 0px 6px #555;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    border: solid 5px white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.info > div:not(:first-child){
+    align-self: center;
+}
+.ctn-info > i{
+    width: 20px;
+}
+.list-filtre >  div:not(:first-child){
+    position: relative;
+    display: flex;
+    background-color: white;
+    border: solid 2px #F2F2F2;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-align: center;
+}
+.ctn-ico-filtre{
+    background-color: #DEEBFF;
+    padding: 12px;
+    position: absolute;
+    left: 10px;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.ctn-ico-filtre > i{
+    width: 22.5px;
+}
+.list-heberg{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    width: 65%;
+}
+.populaire-head{
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-between!important;
+    align-items: center!important;
+    height: auto!important;
+    font-size: 20px;
+}
