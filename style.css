@@ -380,6 +380,7 @@ footer{
 }
 .populaire > img{    
     width: 55%;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 600px) {
