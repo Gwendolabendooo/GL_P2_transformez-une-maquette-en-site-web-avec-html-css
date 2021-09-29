@@ -209,13 +209,11 @@ footer{
 }
 .act-1{
     box-shadow: 0px 0px 6px #555;
-    border: solid 4px white;
     background-color: white;
 }
 .act-4{
     background-color: white;
     box-shadow: 0px 0px 6px #555;
-    border: solid 4px white;
     overflow: hidden;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -223,7 +221,6 @@ footer{
 .act-2{
     background-color: white;
     box-shadow: 0px 0px 6px #555;
-    border: solid 4px white;
     overflow: hidden;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -232,7 +229,6 @@ footer{
     height: 40%;
     background-color: white;
     box-shadow: 0px 0px 6px #555;
-    border: solid 4px white;
     overflow: hidden;
     border-radius: 20px;
     -webkit-border-radius: 20px;
