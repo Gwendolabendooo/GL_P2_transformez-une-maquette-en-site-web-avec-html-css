@@ -1,7 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    scroll-behavior: smooth;
 }
 nav{
     display: flex;
@@ -96,6 +98,9 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+footer > div{
+    padding: 20px;
+}
 .hebergement{
     width: 30%;
     height: 250px;
@@ -103,11 +108,11 @@ footer{
     box-shadow: 0px 0px 6px #555;
     border: solid white 5px;
     background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -ms-border-radius: 10px 10px 10px 10px;
-    -o-border-radius: 10px 10px 10px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
     overflow: hidden;
 }
 .hebergement > div > h4{
@@ -171,18 +176,11 @@ footer{
     -o-border-radius: 50px;
     text-align: center;
 }
-.rubrique > a:visited{
-    border-top: solid 2px #0065FC; 
-}
-.rubrique-hover{
-    border-top: solid 2px #0065FC;
-}
 .rubrique-hover > a{
     color: #0065FC;
 }
 .sec-activites{
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 .activites{
     width: 20%;
@@ -463,11 +461,11 @@ footer{
         align-items: center;
     }
     .ctn-act {
-        flex-direction: column;
+        flex-direction: column!important;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
     }
     .activites{
@@ -488,6 +486,7 @@ footer{
     }
     .act-1, .act-2, .act-3, .act-4{
         height: 240px;
+        margin-top: 20px;
     }
     .act-v2{
         width: 45%;
@@ -615,7 +614,7 @@ footer{
         padding-left: 40px;
     }
     .img-act2, .img-act3{
-        height: 100px;
+        height: 77px;
     }
     .img-act{
         height: 100px;
