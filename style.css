@@ -528,6 +528,9 @@ footer > div{
     nav{
         display: none;
     }
+    .ctn-info{
+        padding: 9px;
+    }
     .nav-mobile{
         display: block;
     }
