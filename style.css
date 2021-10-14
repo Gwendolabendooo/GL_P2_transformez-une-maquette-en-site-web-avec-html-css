@@ -299,6 +299,7 @@ footer > div{
 .list-filtre >  div:not(:first-child):hover{
     color: white;
     background-color: #0065FC;
+    f
 }
 .ctn-ico-filtre{
     background-color: #DEEBFF;
@@ -343,8 +344,6 @@ footer > div{
 }
 .rubrique-mobile > a{
     color: black;
-}
-.rubrique-hover-mobile > a{
 }
 .nav-mobile > ul{
     display: flex;
