@@ -112,9 +112,9 @@ footer{
     height: 200px;
     cursor: pointer;
     box-shadow: 3px 2px 16px 0px #bdbdbd;
-    border: solid white 5px;
-    background-color: white;
+    border: solid rgb(249, 249, 249) 5px;
     border-radius: 22px;
+    background-color: white;
     margin: 15px;
     -webkit-border-radius: 22px;
     -moz-border-radius: 22px;
@@ -276,7 +276,7 @@ footer{
     margin: auto;
     overflow: hidden;
     background-color: white;
-    border: solid 5px white;
+    border: solid 5px rgb(249, 249, 249);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
