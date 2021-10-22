@@ -208,6 +208,7 @@ footer{
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
+    overflow: initial;
     margin: 0;
 }
 .ctn-act{
@@ -471,7 +472,7 @@ footer{
         width: 41%;
     }
     .activites > img{
-        height: 190px;
+        height: 120px;
     }
 
     .ctn-act{
@@ -484,7 +485,7 @@ footer{
         align-items: center;
     }
     .act-1, .act-2, .act-3, .act-4{
-        height: 240px;
+        height: 170px;
         margin: 20px;
         box-shadow: 3px 2px 16px 0px #bdbdbd!important
     }
@@ -498,10 +499,7 @@ footer{
         flex-direction: row;
     }
     .img-act2, .img-act3{
-        height: 190px;
-    }
-    .img-act{
-        height: 190px;
+        height: 120px;
     }
     .hebergement{
         width: 35%!important;
@@ -573,6 +571,7 @@ footer{
     }
     .desc-item {
         display: flex;
+        width: 60%;
         flex-direction: column;
         justify-content: space-between;
     }
