@@ -1,14 +1,16 @@
-html{
-    scroll-behavior: smooth;
-}
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
+}
+article{
+    cursor: pointer;
 }
 nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 .main{
     margin-left: 40px;
@@ -71,8 +73,12 @@ nav > img{
     height: 50px;
     padding: 10px;
 }
+nav > li{
+    margin: 10px;
+}
 nav > ul{
     display: flex;
+    margin-left: auto;
 }
 nav > ul > li{
     padding: 20px;
@@ -91,28 +97,29 @@ nav > ul > li:hover a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 600px;
+}
+#more{
+    margin-left: 20px;
+    font-size: 16px;
 }
 footer{
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-between;
-}
-footer > div{
-    padding: 20px;
+    justify-content: space-around;
 }
 .hebergement{
-    width: 30%;
-    height: 250px;
+    width: 28%;
+    height: 200px;
     cursor: pointer;
-    box-shadow: 0px 0px 6px #555;
+    box-shadow: 3px 2px 16px 0px #bdbdbd;
     border: solid white 5px;
     background-color: white;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 22px;
+    margin: 15px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
     overflow: hidden;
 }
 .hebergement > div > h4{
@@ -133,7 +140,7 @@ footer > div{
 }
 .hebergement > img{
     width: 100%;
-    height: 150px;
+    height: 110px;
     object-fit: cover;
 }
 .ctn-list{
@@ -176,11 +183,12 @@ footer > div{
     -o-border-radius: 50px;
     text-align: center;
 }
-.rubrique-hover > a{
-    color: #0065FC;
+.rubrique > a:visited{
+    border-top: solid 2px #0065FC; 
 }
 .sec-activites{
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 .activites{
     width: 20%;
@@ -193,8 +201,6 @@ footer > div{
 }
 .title-act{
     padding: 10px;
-    margin: 0;
-    font-size: 16px;
     font-weight: 600;
 }
 .act-v2{
@@ -249,18 +255,22 @@ footer > div{
 }
 .list-populaire > div{
     display: flex;
+    height:90%;
     flex-direction: column;
-    height: 650px;
 }
 .desc-item{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.populaire > div > div > h4{
+    margin-top: 5px;
+    font-size: 14px;
+}
 .populaire{
     cursor: pointer;
     display: flex;
-    height: 180px;
+    height: 150px;
     box-shadow: 0px 0px 6px #555;
     width: 90%;
     margin: auto;
@@ -299,7 +309,6 @@ footer > div{
 .list-filtre >  div:not(:first-child):hover{
     color: white;
     background-color: #0065FC;
-    f
 }
 .ctn-ico-filtre{
     background-color: #DEEBFF;
@@ -320,50 +329,6 @@ footer > div{
 }
 .ctn-ico-filtre > i{
     width: 22.5px;
-}
-.rubrique-mobile{
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-}
-.rubrique-mobile{
-    width: 50%;
-    text-align: center;
-    border-bottom: 2px solid #e2e2e2;
-}
-.rubrique-hover-mobile{
-    width: 50%;
-    text-align: center;
-    border-bottom: 2px solid #0065FC;
-}
-.rubrique-mobile:hover{
-    border-bottom: 2px solid #0065FC;
-}
-.rubrique-mobile > a:hover{
-    color: #0065FC;
-}
-.rubrique-mobile > a{
-    color: black;
-}
-.nav-mobile > ul{
-    display: flex;
-    padding-inline-start: 0;
-}
-.nav-mobile{
-    display: none;
-}
-.nav-mobile > div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-mobile > div > img{
-    width: 100px;
-}
-.nav-mobile > div > li{
-
 }
 .list-heberg{
     border-radius: 30px;
@@ -394,12 +359,44 @@ footer > div{
     font-size: 20px;
 }
 .populaire > img{    
-    width: 55%;
+    width: 40%;
     object-fit: cover;
 }
-  @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1350px) {
+    .hebergement{
+        width: 40%!important;
+    }
+}
+  @media only screen and (max-width: 1030px) {
+    nav > ul{
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+    }
+    nav > ul > li{
+        width: inherit;
+        text-align: center;
+        border-bottom: solid 3px #dadada;
+        font-weight: 500;
+    }
+    nav > ul > li:hover{
+        border-top: none!important;
+        border-bottom: solid 3px #0065FC;
+        color: #0065FC;
+    }
     nav{
-        display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    nav > a{
+        order: 2;
+        font-weight: 700;
+        margin: 10px;
+    }
+    nav > img{
+        order: 1;
     }
     main{
         overflow: hidden;
@@ -434,10 +431,6 @@ footer > div{
         -ms-border-radius: 0;
         -o-border-radius: 0;
     }
-    .populaire > img{
-        width: 50%;
-        object-fit: cover;
-    }
     .populaire{
         height: 140px;
         margin: auto;
@@ -461,21 +454,21 @@ footer > div{
     .list-hebergement {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         height: auto;
+        justify-content: space-evenly;
         flex-direction: row;
         align-items: center;
     }
     .ctn-act {
-        flex-direction: column!important;
+        flex-direction: column;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
     }
     .activites{
-        width: 45%;
+        width: 41%;
     }
     .activites > img{
         height: 190px;
@@ -483,7 +476,7 @@ footer > div{
 
     .ctn-act{
         height: auto;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -492,7 +485,8 @@ footer > div{
     }
     .act-1, .act-2, .act-3, .act-4{
         height: 240px;
-        margin-top: 20px;
+        margin: 20px;
+        box-shadow: 3px 2px 16px 0px #bdbdbd!important
     }
     .act-v2{
         width: 45%;
@@ -510,7 +504,7 @@ footer > div{
         height: 190px;
     }
     .hebergement{
-        width: 45%;
+        width: 35%!important;
         margin: 10px;
     }
     .search{
@@ -531,11 +525,19 @@ footer > div{
 }
 
 @media only screen and (max-width: 600px) {
-    nav{
-        display: none;
+    .list-filtre > div:first-child {
+        width: 70%;
+        margin-left: 10px;
     }
-    .ctn-info{
-        padding: 9px;
+    .info > div:not(:first-child) {
+        font-size: 14px;
+    }
+    #more{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .list-filtre > div:not(:first-child) {
+        font-size: 16px;
     }
     .nav-mobile{
         display: block;
@@ -562,7 +564,6 @@ footer > div{
         -o-border-radius: 0;
     }
     .populaire > img{
-        width: 50%;
         object-fit: cover;
     }
     .populaire{
@@ -573,7 +574,7 @@ footer > div{
     .desc-item {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     h4{
         margin-bottom: 10px;
@@ -598,22 +599,14 @@ footer > div{
         flex-wrap: nowrap;
         align-items: center;
     }
-    .activites{
+    .act-v2{
         width: 90%!important;
     }
-    .activites > img{
-        height: 90px!important;
+    .activites{
+        width: 80%;
     }
-
     .ctn-act{
         height: auto;
-    }
-    .act-1, .act-2, .act-3, .act-4{
-        height: 140px!important;
-    }
-    .act-v2{
-        height: 300px;
-        width: 92%!important;
     }
     footer {
         background-color: #F2F2F2;
@@ -622,14 +615,8 @@ footer > div{
         flex-direction: column;
         padding-left: 40px;
     }
-    .img-act2, .img-act3{
-        height: 77px;
-    }
-    .img-act{
-        height: 100px;
-    }
     .hebergement{
-        width: 90%;
+        width: 90%!important;
         margin: 10px;
     }
     .search{
